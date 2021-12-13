@@ -6,7 +6,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "angular-ci-cd": {
+    "iqfome-web-angular": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -16,7 +16,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/angular-ci-cd",
+            "outputPath": "dist/iqfome-web-angular",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -65,18 +65,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "angular-ci-cd:build"
+            "browserTarget": "iqfome-web-angular:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "angular-ci-cd:build:production"
+              "browserTarget": "iqfome-web-angular:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "angular-ci-cd:build"
+            "browserTarget": "iqfome-web-angular:build"
           }
         },
         "test": {
@@ -113,15 +113,15 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "angular-ci-cd:serve"
+            "devServerTarget": "iqfome-web-angular:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "angular-ci-cd:serve:production"
+              "devServerTarget": "iqfome-web-angular:serve:production"
             }
           }
         }
       }
     }},
-  "defaultProject": "angular-ci-cd"
+  "defaultProject": "iqfome-web-angular"
 }

@@ -1,10 +1,11 @@
 {
-  "name": "angular-ci-cd2",
+  "name": "iqfome-web-angular",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
+
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"
