@@ -14,6 +14,9 @@ import { CarouselComponent } from './components/carousel/carousel.component';
 import { FooterComponent } from './footer/footer.component';
 import { MenuhumbergerComponent } from './menuhumberger/menuhumberger.component';
 import { FeaturedComponent } from './featured/featured.component';
+import { AboutComponent } from './about/about.component';
+import { ReactiveFormsModule } from '@angular/forms';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
   declarations: [
@@ -29,10 +32,16 @@ import { FeaturedComponent } from './featured/featured.component';
     CarouselComponent,
     FooterComponent,
     MenuhumbergerComponent,
-    FeaturedComponent
+    FeaturedComponent,
+    AboutComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    ReactiveFormsModule,
+    RouterModule.forRoot([
+      { path: '', component: AppComponent },
+      { path: 'about', component: AboutComponent }
+    ])
   ],
   providers: [],
   bootstrap: [AppComponent]
