@@ -20,6 +20,8 @@ import { RouterModule } from '@angular/router';
 import { AppRoutingModule } from './app-routing.module';
 import { HomeComponent } from './home/home.component';
 import { DepartmentsComponent } from './departments/departments.component';
+import { LoginComponent } from './login/login/login.component';
+import { RegisterComponent } from './login/register/register.component';
 
 @NgModule({
   declarations: [
@@ -38,7 +40,9 @@ import { DepartmentsComponent } from './departments/departments.component';
     FeaturedComponent,
     AboutComponent,
     HomeComponent,
-    DepartmentsComponent
+    DepartmentsComponent,
+    LoginComponent,
+    RegisterComponent
   ],
   imports: [
     BrowserModule,
