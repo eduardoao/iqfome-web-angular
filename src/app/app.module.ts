@@ -17,6 +17,8 @@ import { FeaturedComponent } from './featured/featured.component';
 import { AboutComponent } from './about/about.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
+import { AppRoutingModule } from './app-routing.module';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
   declarations: [
@@ -33,15 +35,13 @@ import { RouterModule } from '@angular/router';
     FooterComponent,
     MenuhumbergerComponent,
     FeaturedComponent,
-    AboutComponent
+    AboutComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
-    ReactiveFormsModule,
-    RouterModule.forRoot([
-      { path: '', component: AppComponent },
-      { path: 'about', component: AboutComponent }
-    ])
+    //ReactiveFormsModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
