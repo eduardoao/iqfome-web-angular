@@ -19,6 +19,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 import { AppRoutingModule } from './app-routing.module';
 import { HomeComponent } from './home/home.component';
+import { DepartmentsComponent } from './departments/departments.component';
 
 @NgModule({
   declarations: [
@@ -36,7 +37,8 @@ import { HomeComponent } from './home/home.component';
     MenuhumbergerComponent,
     FeaturedComponent,
     AboutComponent,
-    HomeComponent
+    HomeComponent,
+    DepartmentsComponent
   ],
   imports: [
     BrowserModule,
