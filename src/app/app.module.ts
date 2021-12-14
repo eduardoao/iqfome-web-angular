@@ -11,6 +11,9 @@ import { SearchComponent } from './search/search.component';
 import { CardComponent } from './components/card/card.component';
 import { BannerComponent } from './components/banner/banner.component';
 import { CarouselComponent } from './components/carousel/carousel.component';
+import { FooterComponent } from './footer/footer.component';
+import { MenuhumbergerComponent } from './menuhumberger/menuhumberger.component';
+import { FeaturedComponent } from './featured/featured.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +26,10 @@ import { CarouselComponent } from './components/carousel/carousel.component';
     SearchComponent,
     CardComponent,
     BannerComponent,
-    CarouselComponent
+    CarouselComponent,
+    FooterComponent,
+    MenuhumbergerComponent,
+    FeaturedComponent
   ],
   imports: [
     BrowserModule
