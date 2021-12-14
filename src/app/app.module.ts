@@ -8,9 +8,9 @@ import { HeadermenuComponent } from './headermenu/headermenu.component';
 import { HeadercartComponent } from './headercart/headercart.component';
 import { CategoriesComponent } from './categories/categories.component';
 import { SearchComponent } from './search/search.component';
-import { CarouselComponent } from './carousel/carousel.component';
 import { CardComponent } from './components/card/card.component';
 import { BannerComponent } from './components/banner/banner.component';
+import { CarouselComponent } from './components/carousel/carousel.component';
 
 @NgModule({
   declarations: [
@@ -21,9 +21,9 @@ import { BannerComponent } from './components/banner/banner.component';
     HeadercartComponent,
     CategoriesComponent,
     SearchComponent,
-    CarouselComponent,
     CardComponent,
-    BannerComponent
+    BannerComponent,
+    CarouselComponent
   ],
   imports: [
     BrowserModule
